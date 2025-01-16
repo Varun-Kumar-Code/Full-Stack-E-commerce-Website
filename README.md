@@ -17,40 +17,10 @@ Technologies Used
 + Database: MySQL
 
 Getting Started
-Clone the repository:
-
-
-Open In Editor
-Run
-Copy code
-git clone https://github.com/yourusername/Full-Stack-Ecommerce-Website.git
-Navigate to the project directory:
-
-
-Open In Editor
-Run
-Copy code
-cd Full-Stack-Ecommerce-Website
-Install the required packages:
-
-
-Open In Editor
-Run
-Copy code
-pip install -r requirements.txt
-Set up the database and run migrations:
-
-
-Open In Editor
-Run
-Copy code
+1. Set up the database and run migrations:
 python manage.py migrate
-Start the development server:
-
-
-Open In Editor
-Run
-Copy code
+2. Start the development server:
 python manage.py runserver
+
 Contributing
 Feel free to fork the repository and submit pull requests for any improvements or features!

@@ -17,6 +17,46 @@ Technologies Used
 + Database: MySQL
 
 Getting Started
+
+Check your Python version:
+python --version
+
+Install Pipenv:
+pip install pipenv
+(Optional: Upgrade pip)
+python.exe -m pip install --upgrade pip
+
+Create and activate a Pipenv shell:
+pipenv shell
+
+Install Django:
+pip install django
+
+Verify the Pipenv virtual environment:
+pipenv --venv
+
+Install MySQL client
+pip install mysqlclient
+
+Install Pillow for image handling:
+pip install pillow
+
+Install Django Jazzmin for admin interface customization:
+pip install django-jazzmin
+
+Create the database in MySQL:
+CREATE DATABASE django_avk;
+
+Make migrations:
+pipenv run python manage.py makemigrations
+
+Apply migrations:
+pipenv run python manage.py migrate
+
+Create a superuser for the admin interface:
+python manage.py createsuperuser
+
+
 1. Set up the database and run migrations:
 python manage.py migrate
 2. Start the development server:

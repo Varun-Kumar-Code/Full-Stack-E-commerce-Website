@@ -1,59 +1,52 @@
 # Full-Stack-Ecommerce-Website
 Full-Stack E-commerce Website
-Description
+
+Description:
 This is a full-stack e-commerce website built using HTML, CSS, JavaScript, Django, Python, and MySQL. The project provides a complete online shopping experience, featuring user authentication, product listings, a shopping cart, and secure payment processing.
 
-Features
-User authentication and registration
-Product listings with search functionality
-Shopping cart management
-Secure payment processing
-Responsive design for mobile and desktop
+Features:
++ User authentication and registration
++ Product listings with search functionality
++ Shopping cart management
++ Secure payment processing
++ Responsive design for mobile and desktop
+
 Technologies Used
-Frontend: HTML, CSS, JavaScript
-Backend: Django, Python
-Database: MySQL
++ Frontend: HTML, CSS, JavaScript
++ Backend: Django, Python
++ Database: MySQL
+
 Getting Started
 Clone the repository:
-bash
 
-Verify
 
 Open In Editor
 Run
 Copy code
 git clone https://github.com/yourusername/Full-Stack-Ecommerce-Website.git
 Navigate to the project directory:
-bash
 
-Verify
 
 Open In Editor
 Run
 Copy code
 cd Full-Stack-Ecommerce-Website
 Install the required packages:
-bash
 
-Verify
 
 Open In Editor
 Run
 Copy code
 pip install -r requirements.txt
 Set up the database and run migrations:
-bash
 
-Verify
 
 Open In Editor
 Run
 Copy code
 python manage.py migrate
 Start the development server:
-bash
 
-Verify
 
 Open In Editor
 Run
@@ -61,6 +54,3 @@ Copy code
 python manage.py runserver
 Contributing
 Feel free to fork the repository and submit pull requests for any improvements or features!
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.

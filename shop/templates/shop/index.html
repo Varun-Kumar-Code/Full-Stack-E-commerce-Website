@@ -1,0 +1,100 @@
+{% extends 'shop/layouts/main.html' %}
+{% load static %}
+{% block title %}
+AVK | Online Shopping
+{% endblock title %}
+{% block content %}
+
+<style>
+  #dynamic-text-container {
+      width: 100%;
+      height: 25px;
+      overflow: hidden; /* Hide overflow to create a scrolling effect */
+      background-color: darkslategray; /* Background color */
+      color: aliceblue; /* Text color */
+      position: relative; /* Positioning context for child elements */
+  }
+  #dynamic-text {
+      white-space: nowrap; /* Prevent text wrapping */
+      position: absolute; /* Positioning for scrolling effect */ 
+  }
+</style>
+
+<!--Home-->
+<section id="home">
+  <div class="container">
+      <p></p> 
+      <h5 class="try">NEW ARRIVALS</h5>
+      <h1><span>Best Prices</span>This Season</h1>
+      <p class="try">Eshop offers the best products for the most affordable prices</p>
+      <button class="text-uppercase button ">Shop Now</button>
+  </div> 
+</section>
+
+<!--Brand-->
+<section id="brand" class="container">
+  <div class="row">
+      <img class="img-fluid col-lg-3 col-md-6 col-sm-12" src="static/image/brand1.jpg"/>
+      <img class="img-fluid col-lg-3 col-md-6 col-sm-12" src="static/image/brand2.jpg"/>
+      <img class="img-fluid col-lg-3 col-md-6 col-sm-12" src="static/image/brand3.jpg"/>
+      <img class="img-fluid col-lg-3 col-md-6 col-sm-12" src="static/image/brand4.jpg"/>
+  </div>
+</section>
+
+<h1><div class="tit parallax" style="height: 80vh;">
+  <div class="parallax-content" >
+   <h1></h1>
+   <pre><h1 class="tit">Always In Style!</h1></pre>
+  </div>
+</div>
+
+</h1>
+  <div class="container" style="margin-top:70px;" >
+    <div class="row">
+      <div class="col-12">
+        <h4 class="mb-3"> Latest Offfers</h4>
+        <hr style="border-color:#b8bfc2;">
+      </div>
+      {% for item in products %}
+      <div class="col-md-4 col-lg-3">
+        <div class="card my-3">
+          <img src="{{item.product_image.url}}"  class="card-image-top" alt="Categories" height="310px" width="310">
+          <a href="{% url 'product_details' item.category.name item.name %}">
+          <div class="card-body">
+            <h5 class="card-title text-primary">{{ item.name }}</h5>
+            <p class="card-text">
+              <span class="float-start old_price"><s>Rs.{{ item.original_price | stringformat:'d'}}</s></span>
+              <span class="float-end new_price">Rs.{{ item.selling_price | stringformat:'d' }}</span>
+            </p>
+          </div>
+        </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+ 
+  <div id="dynamic-text-container">
+    <h5 id="dynamic-text">AVK Shopping</h5>
+  </div>
+  <script> 
+     document.addEventListener('DOMContentLoaded', function() { 
+            const textElement = document.getElementById("dynamic-text"); 
+            const text = "AVK Shopping🛒 Always❤️ in Style!🕺💃 Here we have more new collections for you!😍 keep shopping! 🛍️";
+            const space = "\u00A0\u00A0\u00A0\u00A0\u00A0"; // Adjust the number of non-breaking spaces as needed
+            const continuousText = text + space + text + space + text; // Create a longer string for continuous scrolling
+            textElement.textContent = continuousText; // Set the text content to the duplicated text
+
+            let x = window.innerWidth;/*textElement.offsetWidth*/
+            let speed = 1.5;/*0.9*/ 
+            setInterval(function() {
+                x -= speed;
+                if (x < -textElement.offsetWidth / 1) { // 2 Adjusted to half the width for seamless effect
+                    x = window.innerWidth; //  x = textElement.offsetWidth /2 Reset to half the width
+                } 
+                textElement.style.transform = "translateX(" + x + "px)";
+            }, 10)/*16*/;
+        });
+   </script>
+  
+  {% endblock content %}

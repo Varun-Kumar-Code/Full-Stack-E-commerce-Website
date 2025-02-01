@@ -1,66 +1,86 @@
-# Full-Stack-Ecommerce-Website
-Full-Stack E-commerce Website
+# Full-Stack E-commerce Website
 
-Description:
 This is a full-stack e-commerce website built using HTML, CSS, JavaScript, Django, Python, and MySQL. The project provides a complete online shopping experience, featuring user authentication, product listings, a shopping cart, and secure payment processing.
 
-Features:
-+ User authentication and registration
-+ Product listings with search functionality
-+ Shopping cart management
-+ Secure payment processing
-+ Responsive design for mobile and desktop
+## Features
 
-Technologies Used
-+ Frontend: HTML, CSS, JavaScript
-+ Backend: Django, Python
-+ Database: MySQL
+- User authentication and registration
+- Product listings with search functionality
+- Shopping cart management
+- Secure payment processing
+- Responsive design for mobile and desktop
 
-Getting Started
+## Technologies Used
 
-+ Check your Python version:
-python --version
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Django, Python
+- **Database:** MySQL
 
-+ Install Pipenv:
-pip install pipenv
-(Optional: Upgrade pip)
-python.exe -m pip install --upgrade pip
+## Getting Started
 
-+ Create and activate a Pipenv shell:
-pipenv shell
+Follow these steps to set up the project locally:
 
-+ Install Django:
-pip install django
+1. **Check your Python version:**
+   ```bash
+   python --version
 
-+ Verify the Pipenv virtual environment:
-pipenv --venv
+2. **Install Pipenv (Optional: Upgrade pip):**
+   ```bash
+   pip install pipenv
+   python.exe -m pip install --upgrade pip
+   
+3. **Create and activate a Pipenv shell:**
+   ```bash
+   pipenv shell
 
-+ Install MySQL client
-pip install mysqlclient
+4. **Install Django:**
+   ```bash
+   pip install django
 
-+ Install Pillow for image handling:
-pip install pillow
+5. **Verify the Pipenv virtual environment:**
+   ```bash
+   pipenv --venv
+   
+6. **Install MySQL client:**
+   ```bash
+   pip install mysqlclient
 
-+ Install Django Jazzmin for admin interface customization:
-pip install django-jazzmin
+7. **Install Pillow for image handling:**
+   ```bash
+   pip install pillow
 
-+ Create the database in MySQL:
-CREATE DATABASE django_avk;
+8. **Install Django Jazzmin for admin interface customization:**
+   ```bash
+   pip install django-jazzmin
 
-+ Make migrations:
-pipenv run python manage.py makemigrations
+9. **Create the database in MySQL:**
+   ```bash
+   CREATE DATABASE database_name;
 
-+ Apply migrations:
-pipenv run python manage.py migrate
+10. **Make migrations:**
+    ```bash
+     pipenv run python manage.py makemigrations
 
-+ Create a superuser for the admin interface:
-python manage.py createsuperuser
+11. **Apply migrations:**
+    ```bash
+    pipenv run python manage.py migrate
 
-+ Set up the database and run migrations:
-python manage.py migrate
+12. **Create a superuser for the admin interface:**
+    ```bash
+    python manage.py createsuperuser
 
-* Start the development server:
-python manage.py runserver
+13. **Set up the database and run migrations:**
+    ```bash
+    python manage.py migrate
 
-Contributing
+14. **Start the development server:**
+    ```bash
+    python manage.py runserver
+
+## Contributing
 Feel free to fork the repository and submit pull requests for any improvements or features!
+
+
+### Notes:
+- Make sure to include a `LICENSE` file in your repository if you mention licensing.
+- You can customize the sections further based on your project's specific needs or add additional sections like "Usage", "Screenshots", or "Contact Information" if necessary.

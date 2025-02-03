@@ -81,6 +81,5 @@ Follow these steps to set up the project locally:
 Feel free to fork the repository and submit pull requests for any improvements or features!
 
 
-### Notes:
-- Make sure to include a `LICENSE` file in your repository if you mention licensing.
-- You can customize the sections further based on your project's specific needs or add additional sections like "Usage", "Screenshots", or "Contact Information" if necessary.
+### License:
+- This project is licensed under the MIT License. See the LICENSE file for details.

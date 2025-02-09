@@ -2,7 +2,7 @@
 
 This is a full-stack e-commerce website built using HTML, CSS, JavaScript, Django, Python, and MySQL. The project provides a complete online shopping experience, featuring user authentication, product listings, a shopping cart, and secure payment processing.
 
-## Features
+## ✨ Features
 
 - User authentication and registration
 - Product listings with search functionality
@@ -10,13 +10,13 @@ This is a full-stack e-commerce website built using HTML, CSS, JavaScript, Djang
 - Secure payment processing
 - Responsive design for mobile and desktop
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Django, Python
 - **Database:** MySQL
 
-## Getting Started
+## 🚀 Getting Started
 
 Follow these steps to set up the project locally:
 
@@ -77,8 +77,8 @@ Follow these steps to set up the project locally:
     ```bash
     python manage.py runserver
 
-## Contributing
+## 👥 Contributing
 Feel free to fork the repository and submit pull requests for any improvements or features!
 
-## License
+## 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.

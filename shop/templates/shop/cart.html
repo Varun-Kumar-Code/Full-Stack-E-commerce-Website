@@ -11,7 +11,6 @@
           <h4 class="mb-3">Cart  Items</h4>
           <hr style="border-color:#b8bfc2;">
         </div>
-      
         <table>
             <tr>
                 <th>Image</th>
@@ -21,8 +20,6 @@
                 <th>Amount</th>
                 <th>Remove</th>
             </tr>
-          
-
             {% for item in cart %}
            <tr>
               <td><img src="{{item.product.product_image.url}}" height="75px" alt="{{item.product.name}}"></td>
@@ -41,10 +38,8 @@
               <td><button class="btn btn-primary btn-sm">
                 <i class="fa fa-check-circle"></i> Check Out
               </button></td>
-            </tr>
-           
+            </tr> 
         </table>
-       
       </div>
       </div>
   </section>
@@ -56,6 +51,6 @@
      return acc += Number(curr.textContent)
     }, 0);
     document.getElementById("net").innerHTML="Rs : "+res;
-
   </script>
+  
 {% endblock content %}

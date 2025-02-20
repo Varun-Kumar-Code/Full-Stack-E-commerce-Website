@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       credentials: 'same-origin',
       headers:{
         'Accept': 'application/json',
-              'X-Requested-With': 'XMLHttpRequest',
+        'X-Requested-With': 'XMLHttpRequest',
               'X-CSRFToken': '{{ csrf_token }}',
           },
           body: JSON.stringify(postObj)

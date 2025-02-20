@@ -32,8 +32,7 @@ AVK | Online Shopping
           <h5 class="my-2 text-primary">Offer Price   : Rs.{{products.selling_price}}</h5>
           <div class="my-3">
             {% if products.quantity > 0 %}
-            <input type="hidden" value="{{products.id}}" id="pid">
-            
+            <input type="hidden" value="{{products.id}}" id="pid">     
               <p>
                 <div class="input-group" style="width:150px">
                   <button class="input-group-text bg-success text-light" id="btnMinus" ><i class="fa fa-minus"></i></button>
@@ -133,8 +132,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   btnFav.addEventListener("click", function() {
-     
-        let postObj = { 
+    let postObj = { 
             'pid': pid.value
         }
         console.log(postObj);

@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       body: JSON.stringify(postObj)
     }).then(response => {
 	    return response.json();
-        }).then(data => {
+    }).then(data => {
         	//console.log(data);
           alert(data['status']);
         });

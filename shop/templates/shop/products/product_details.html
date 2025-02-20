@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     fetch("/fav",{
       method: 'POST',
       credentials: 'same-origin',
-          headers:{
+      headers:{
               'Accept': 'application/json',
               'X-Requested-With': 'XMLHttpRequest',
               'X-CSRFToken': '{{ csrf_token }}',

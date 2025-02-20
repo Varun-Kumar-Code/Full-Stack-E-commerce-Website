@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         'X-Requested-With': 'XMLHttpRequest',
         'X-CSRFToken': '{{ csrf_token }}',
       },
-          body: JSON.stringify(postObj)
+      body: JSON.stringify(postObj)
         }).then(response => {
 	        return response.json();
         }).then(data => {

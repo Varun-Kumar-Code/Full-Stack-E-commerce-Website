@@ -97,7 +97,7 @@ a {
   align-items: flex-end;
   text-align: end;
 }
-/*old*/
+/**/
 .carousel-item img {
   object-fit: cover;
   object-position: top;

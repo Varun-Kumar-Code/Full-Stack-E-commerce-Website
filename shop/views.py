@@ -22,7 +22,6 @@ def remove_fav(request,fid):
   item=Favourite.objects.get(id=fid)
   item.delete()
   return redirect("/favviewpage")
-
  
 def cart_page(request):
   if request.user.is_authenticated:

@@ -249,7 +249,7 @@ a {
   flex: 1;
 }
  
- .btn-cssbuttons ul li a {
+.btn-cssbuttons ul li a {
   display: inline-flex;
   vertical-align: middle;
   transform: translateY(55px);

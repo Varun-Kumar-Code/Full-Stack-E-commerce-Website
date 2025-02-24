@@ -260,7 +260,7 @@ a {
   opacity: 0.5;
 }
  
- .btn-cssbuttons:hover::before {
+.btn-cssbuttons:hover::before {
   transform: scale(1.2);
  }
  

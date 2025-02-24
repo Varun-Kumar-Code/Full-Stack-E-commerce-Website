@@ -265,7 +265,7 @@ a {
 }
  
 .btn-cssbuttons:hover span,
- .btn-cssbuttons:hover span span {
+.btn-cssbuttons:hover span span {
   transform: translateY(-55px);
  }
  

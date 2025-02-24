@@ -267,7 +267,7 @@ a {
 .btn-cssbuttons:hover span,
 .btn-cssbuttons:hover span span {
   transform: translateY(-55px);
- }
+}
  
  .btn-cssbuttons:hover ul li a {
   transform: translateY(0);

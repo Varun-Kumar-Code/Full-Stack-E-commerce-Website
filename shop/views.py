@@ -25,7 +25,7 @@ def remove_fav(request,fid):
  
  
  
- 
+
 def cart_page(request):
   if request.user.is_authenticated:
     cart=Cart.objects.filter(user=request.user)

@@ -277,7 +277,7 @@ a {
   transition-delay: 0.15s;
 }
  
- .btn-cssbuttons:hover ul li:nth-child(2) a {
+.btn-cssbuttons:hover ul li:nth-child(2) a {
   transition-delay: 0.2s;
  }
  

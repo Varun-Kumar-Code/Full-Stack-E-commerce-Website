@@ -80,7 +80,6 @@ def logout_page(request):
     messages.success(request,"Logged out Successfully")
   return redirect("/")
  
- 
 def login_page(request):
   if request.user.is_authenticated:
     return redirect("/")

@@ -273,7 +273,7 @@ a {
   transform: translateY(0);
 }
  
- .btn-cssbuttons:hover ul li:nth-child(1) a {
+.btn-cssbuttons:hover ul li:nth-child(1) a {
   transition-delay: 0.15s;
  }
  

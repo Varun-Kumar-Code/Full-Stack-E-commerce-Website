@@ -107,7 +107,7 @@ def register(request):
       return redirect('/login')
   return render(request,"shop/register.html",{'form':form})
  
- 
+
 def collections(request):
   catagory=Catagory.objects.filter(status=0)
   return render(request,"shop/collections.html",{"catagory":catagory})

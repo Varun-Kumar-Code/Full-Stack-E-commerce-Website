@@ -52,7 +52,7 @@ def fav_page(request):
    else:
     return JsonResponse({'status':'Invalid Access'}, status=200)
  
- 
+
 def add_to_cart(request):
    if request.headers.get('x-requested-with')=='XMLHttpRequest':
     if request.user.is_authenticated:

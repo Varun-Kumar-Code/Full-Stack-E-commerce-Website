@@ -35,7 +35,7 @@ def remove_cart(request,cid):
   cartitem.delete()
   return redirect("/cart")
  
- 
+
 def fav_page(request):
    if request.headers.get('x-requested-with')=='XMLHttpRequest':
     if request.user.is_authenticated:

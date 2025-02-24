@@ -262,7 +262,7 @@ a {
  
 .btn-cssbuttons:hover::before {
   transform: scale(1.2);
- }
+}
  
  .btn-cssbuttons:hover span,
  .btn-cssbuttons:hover span span {

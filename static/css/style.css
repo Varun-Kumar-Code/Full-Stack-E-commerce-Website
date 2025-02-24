@@ -258,7 +258,7 @@ a {
  
 .btn-cssbuttons ul li a:hover {
   opacity: 0.5;
- }
+}
  
  .btn-cssbuttons:hover::before {
   transform: scale(1.2);

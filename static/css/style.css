@@ -148,6 +148,12 @@ a {
   color: aliceblue;
   background-color: darkslategray;
 }
+#dynamic-text-container {
+  width: 15178px;
+  height: 20px;
+  color: aliceblue;
+  background-color: darkslategray;
+}
 
 #dynamic-text {
   position: relative;

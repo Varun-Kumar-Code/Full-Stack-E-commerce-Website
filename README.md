@@ -70,7 +70,7 @@ Follow these steps to set up the project locally:
     python manage.py createsuperuser
 
 13. **Set up the database and run migrations:**
-    ```bash
+    ```downmark
     python manage.py migrate
 
 14. **Start the development server:**
